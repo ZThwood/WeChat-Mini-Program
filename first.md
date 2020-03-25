@@ -11,3 +11,5 @@
 git restore 文件名   恢复文件
 
 git rm 文件名 	删除文件
+
+git push 是git push origin master的简写
