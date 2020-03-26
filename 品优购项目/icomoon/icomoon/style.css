@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?jkzy3k');
-  src:  url('fonts/icomoon.eot?jkzy3k#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?jkzy3k') format('truetype'),
-    url('fonts/icomoon.woff?jkzy3k') format('woff'),
-    url('fonts/icomoon.svg?jkzy3k#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?l6fmvw');
+  src:  url('fonts/icomoon.eot?l6fmvw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?l6fmvw') format('truetype'),
+    url('fonts/icomoon.woff?l6fmvw') format('woff'),
+    url('fonts/icomoon.svg?l6fmvw#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -67,11 +67,11 @@
 .icon-checkmark:before {
   content: "\ea10";
 }
-.icon-ctrl3:before {
-  content: "\ea52";
-}
 .icon-ctrl:before {
   content: "\ea50";
+}
+.icon-ctrl3:before {
+  content: "\ea52";
 }
 .icon-ctrl1:before {
   content: "\ea51";

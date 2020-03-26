@@ -1,0 +1,137 @@
+/* 首页的样式 */
+/* main开始 */
+.main {
+    margin: 10px 0 0 220px;
+    width: 980px;
+    height: 455px;
+}
+/* 左边轮播图 */
+.focus {
+    position: relative;
+    width: 720px;
+    height: 455px;
+    background-color: aqua;
+}
+.arrow-right,
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: "icomoon";
+    font-size: 16px;
+}
+.arrow-right {
+    right: 0;
+}
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 0 4px;
+    border-radius: 50%;
+    /* 经过有小手效果 */
+    cursor: pointer;
+}
+.circle li:hover {
+    box-shadow: 0px 0px 1px 2px white;
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.current {
+    background-color: #fff;
+}
+/* 右边快送 */
+.newsflash {
+    width: 250px;
+    height: 455px;
+    
+}
+.news {
+    height: 163px;
+    border: 1px solid #e4e4e4;
+}
+.news-hd {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding-left: 15px;
+}
+.news-hd span {
+    font-size: 14px;
+    color: #333;
+    margin-right: 111px;
+}
+.news-bd {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.news-bd a {
+    display: block;
+    margin-bottom: 4px;
+}
+.news-bd a span {
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.lifeservice {
+    /* 超出大小的隐藏掉 */
+    overflow: hidden;
+    height: 208px;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+}
+.lifeservice ul {
+    /* 作为li的父亲给比li大就可以让li有足够空间浮动一行
+    然后再在父级中溢出隐藏 */
+    width: 255px;
+}
+.lifeservice ul li {
+    position: relative;
+    float: left;
+    width: 62px;
+    height: 72px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lifeservice a {
+    display: block;
+    /* 解决两个父子关系块盒子之间外边距塌陷问题 */
+    overflow: hidden;
+    width: 62px;
+    height: 72px;
+}
+.lifeservice a i {
+    display: block;
+    margin: 10px auto;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons.png) no-repeat -16px -16px;
+}
+.hot {
+    position: absolute;
+    width: 12px;
+    height: 15px;
+    background: url(../img/减.jpg) no-repeat;
+    top: 0;
+    right: 0;
+}
+.lifeservice a p {
+    text-align: center;
+}
+.bergain {
+    height: 75px;
+    margin-top: 5px;
+}

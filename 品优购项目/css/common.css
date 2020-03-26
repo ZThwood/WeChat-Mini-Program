@@ -151,7 +151,6 @@
     background-color: #c81623;
     /* 这里注意因为dd是dropdown里面的，所以高度会和爷爷的border-bottom重叠要加一个margin */
     margin-top: 2px;
-    display: none;
 }
 .menu_item {
     padding-left: 11px;
