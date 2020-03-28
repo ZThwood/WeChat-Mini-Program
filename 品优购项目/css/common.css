@@ -164,7 +164,7 @@
 }
 .menu_item i {
     float: right;
-    margin: 0 10px;
+    margin-right: 11px;
     font-family: 'icomoon';
     color: #fff;
     font-size: 14px;
