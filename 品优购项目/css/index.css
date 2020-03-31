@@ -232,3 +232,42 @@
     margin-left: 10px;
     text-align: center;
 }
+.box-ft {
+    margin-top: 20px;
+}
+.box-bd li {
+    overflow: hidden;
+}
+.box-bd img {
+    transition: all .2s;
+}
+.box-bd img:hover {
+    margin-left: 4px;
+}
+/* 电梯导航 */
+.fixedtool {
+    position: fixed;
+    top: 300px;
+    left: 50%;
+    margin-left: -680px;
+    background-color: #fff;
+    width: 66px;
+}
+.fixedtool ul li {
+    height: 32px; 
+    line-height: 32px;
+    border-bottom: 1px solid #ededed; 
+    text-align: center;
+    cursor: pointer;
+}
+.fix-current {
+    background-color: #c81623;
+    color: #fff;
+}
+/* .fixedtool li a {
+    display: block;
+  
+    height: 30px;
+    width: 66px;
+   
+} */
