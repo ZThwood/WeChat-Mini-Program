@@ -1,0 +1,121 @@
+.body {
+  width: 750rpx;
+  height: 1000rpx;
+  background-color: #fafafa;
+}
+/* 版心 */
+.w {
+  width: 680rpx;
+  margin: 0 auto;
+}
+/* 头部开始 */
+.user {
+  height: 100px;
+  /* background-color: pink; */
+  overflow: hidden;
+}
+.user .photo image{
+  float: left;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-top: 30rpx;
+  margin-right: 25rpx;
+  background-color:blue;
+}
+
+.btn navigator{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+  border: 2px solid springgreen;
+}
+.user text {
+  float: left;
+  font-weight: 700;
+  height: 170rpx;
+  line-height: 170rpx;
+}
+/* 订单start */
+.order {
+  height: 280rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  margin-bottom: 28rpx;
+  background-color: #fff;
+  box-shadow: 0 2rpx 10rpx 0rpx #ddd;
+}
+.order-hd {
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #dadada;
+}
+.order-hd text {
+  float: left;
+  height: 90rpx;
+  font-weight: 700;
+  margin-left: 28rpx;
+}
+.order-hd li {
+  float: left;
+  margin-left: 280rpx;
+  font-size: 28rpx;
+  color: #b6b6b6;
+}
+.order-hd image {
+  float: right;
+  margin-right: 40rpx;
+  margin-top: 30rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+/* 订单身体bd部分 */
+.order-bd {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.order-bd .order-bd-flex {
+  margin-top: 40rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+.order-bd-flex image {
+  width: 30px;
+  height: 30px;
+}
+/* other 开始 */
+.other {
+  height: 526rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx 0rpx #ddd;
+}
+.other-li {
+  height: 130rpx;
+  line-height: 130rpx;
+  border-bottom: 2rpx solid #dadada;
+  margin-left: 36rpx;
+  position: relative;
+}
+.other-li navigator {
+  height: 130rpx;
+}
+.other-li text {
+  font-size: 28rpx;
+  padding-right: 360rpx;
+}
+.other-li image {
+  position: absolute;
+  right: 40rpx;
+  top: 60rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.no-li {
+  border-bottom: none;
+}

@@ -1,0 +1,78 @@
+<view class="body">
+  <!-- 用户头部 -->
+  <view class="user w" wx:if="{{user}}">
+     <view class="photo">
+       <image mode="aspectFill" src="{{user.avatarUrl}}"></image>
+     </view>
+     <text>{{user.nickName}}</text>
+  </view>
+  <view class="user btn" wx:else>
+    <navigator url="/pages/login/index">
+      请先登录授权
+    </navigator>
+  </view>
+  <!-- 订单部分 -->
+  <view class="order w">
+    <!-- 订单上面 -->
+    <view class="order-hd" >
+     <text>我的订单</text>
+      <view bindtap="allOrder">
+        <li>查看全部订单</li>
+        <image src="../../icon/icon-left.png"></image>
+      </view>
+    </view>
+
+    <!-- order-bd订单下面模块 -->
+    <view class="order-bd"  >
+      <view class="order-bd-flex" bindtap="waitPay">
+        <image src="../../icon/pay.png"></image>
+        <view>待支付</view>
+      </view>
+
+      <view class="order-bd-flex" bindtap="waitAccept">
+        <image src="../../icon/wait.png"></image>
+        <view>待接单</view>
+      </view>
+
+      <view class="order-bd-flex" bindtap="alAccept">
+        <image src="../../icon/receiving.png"></image>
+        <view>已接单</view>
+      </view>
+
+      <view class="order-bd-flex" bindtap="alComplete">
+        <image src="../../icon/finish.png"></image>
+        <view>已完成</view>
+      </view>
+    </view>
+  </view>
+  <!-- other开始 -->
+  <view class="other w">
+    <view class="other-li">
+      <navigator url="/pages/coupon/coupon">
+        <text>我的优惠券</text>
+        <image class="" src="../../icon/icon-left.png"></image>
+        <text style="color:#b6b6b6">0张</text>
+      </navigator>
+
+    </view>
+    <view class="other-li">  
+      <navigator url="/pages/address/address">
+          <text>地址管理</text><image class="" src="../../icon/icon-left.png"></image>
+      </navigator>
+    </view>
+
+    <view class="other-li">
+      <navigator>
+        <text>微信设置</text>
+        <image class="" src="../../icon/icon-left.png"></image>
+      </navigator>
+    </view>
+
+    <view class="other-li no-li">
+      <navigator>
+        <text>意见反馈</text>
+        <image class="" src="../../icon/icon-left.png"></image>
+      </navigator>
+    </view>
+  </view>
+</view>

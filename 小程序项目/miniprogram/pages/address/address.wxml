@@ -1,0 +1,17 @@
+<view class="page_row" bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input class="" disabled placeholder="请输入姓名/电话搜索" value="{{searchValue}}"/>
+      </view>
+    </view>
+    <view class='sousuo'>搜索</view> 
+    </view>
+    <!-- <view class="content"></view> -->
+  
+    <view class="address">
+    <view class="content"></view>   
+    <navigator class="img" url="/pages/setarea/setarea"><image src="../../icon/public.png"></image></navigator>
+      <navigator url="/pages/setarea/setarea"><button class='add'>新添地址</button></navigator>
+    </view> 
+     <!-- bindtap="handleChooseAddress" -->

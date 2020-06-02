@@ -1,0 +1,21 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.left {
+  width: 100px;
+  height: 100px;
+  float: left;
+  
+  background: pink
+}
+.right {
+  width: 100px;
+  height: 100px;
+  float: left;
+  background: blueviolet
+}

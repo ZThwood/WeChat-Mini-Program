@@ -1,0 +1,10 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f21990",
+    "navigationBarTitleText": "校园广场",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true,
+    "usingComponents": {
+        "tabs":"../../components/tabs/tabs"
+    }
+}

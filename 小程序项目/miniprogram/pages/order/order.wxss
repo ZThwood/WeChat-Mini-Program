@@ -1,0 +1,47 @@
+page {
+  background-color: #fff
+}
+.order-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  background-color: #f4f4f4;
+  box-shadow: 0 10rpx 0rpx 0rpx rgb(248, 160, 160);
+}
+.order-navbar text {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  padding: 0 30rpx;
+  margin: 0 2rpx;
+  
+}
+/* .item {
+  transition: all 0.1s;
+} */
+.order-navbar .item.active {
+  color: red;
+  background-color: #fff;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  border-left: 6rpx solid rgb(253, 147, 147);
+  border-top: 8rpx solid rgb(255, 58, 58);
+  border-bottom: none;
+  box-shadow: 6rpx 15rpx 0rpx 0rpx #fff;
+  font-weight: bold;
+}
+
+
+
+/* 内容部分 */
+.swiper {
+  /* 要有高度不然不是高度部分划不到 */
+  height: 1150rpx;
+}
+.info {
+  margin-top: 200rpx;
+  text-align: center;
+  color: #aaa
+}
+

@@ -1,0 +1,37 @@
+<!-- 导航条 -->
+<view class="order-navbar">
+<!-- bindtap就是点击事件，bindtap="navbarTap"绑定了js中定义的方法navbarTap  data-idx="{{index}}"是自定义属性-->
+  <text wx:for="{{navbar}}" data-idx="{{index}}" wx:key="unique" class="item {{currentTab==index ? 'active' : ''}}" bindtap="navbarTap">{{item}}</text>
+</view>
+
+
+<!-- 显示内容 -->
+<!-- bindChange 为输入框发生改变时触发事件 -->
+<!-- current:当前所在滑块的 index -->
+<swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange" circular="true">
+  <swiper-item>
+    <view class='info'>
+      <text>没有订单哦(可手滑动)</text>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='info'>
+      <text>没有订单哦2</text>
+    </view>
+  </swiper-item>
+   <swiper-item>
+    <view class='info'>
+      <text>没有订单哦3</text>
+    </view>
+  </swiper-item>
+   <swiper-item>
+    <view class='info'>
+      <text>没有订单哦4</text>
+    </view>
+  </swiper-item>
+   <swiper-item>
+    <view class='info'>
+      <text>没有订单哦5</text>
+    </view>
+  </swiper-item>
+</swiper>

@@ -1,0 +1,61 @@
+<image src="/images/bg.jpg"></image>
+<!-- content开始 -->
+<view class="content">
+  <view class="ul">
+        <!-- 发布需求 -->
+      <navigator url="../index1/index1" hover-class="navigator-hover">
+        <view class="con-left">
+          <image src="../../icon/public.png"></image>
+        </view>
+        <view class="con-right">
+        <!-- text一定要在一行上 -->
+          <text class="hd">发布需求</text>
+          <view class="bd">
+            发布你需要其他用户为你代拿/买的需求，例如拿快递或者购买物品。
+          </view>
+        </view>
+    </navigator>
+    <!-- 寻找需求 -->
+    <navigator url="../../packageA/pages/find/find" >
+        <view class="con-left">
+          <image src="../../icon/find.png"></image>
+        </view>
+        <view class="con-right">
+        <!-- text一定要在一行上 -->
+          <text class="hd">寻找需求</text>
+          <view class="bd">
+            寻找其他用户发布的需求并接受可获得奖励。
+          </view>
+      </view>
+    </navigator>
+    <!-- 其他信息 -->
+    <navigator url="" >
+        <view class="con-left">
+          <image src="../../icon/other.png"></image>
+        </view>
+        <view class="con-right">
+        <!-- text一定要在一行上 -->
+          <text class="hd">其他信息</text>
+          <view class="bd">
+            寻找其他用户发布的需求并接受可获得奖励。
+          </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+<!-- <view id="class">
+  <view id="class3">图标</view>
+  <view id="class4"> 发布需求</view>
+  <view id="class9">发布你需要其他用户为你代拿/买的需求，例如拿快递或者购买物品。</view>
+</view>
+<view id="class1">
+   <view id="class5">图标</view>
+  <view id="class6"></view>
+  <view id="class10">寻找其他用户发布的需求并接受可获得奖励。</view>
+</view>
+<view id="class2">
+   <view id="class7">图标</view>
+  <view id="class8"></view>
+  <view id="class11"></view>
+</view> -->

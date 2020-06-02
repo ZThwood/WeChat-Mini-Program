@@ -1,0 +1,265 @@
+page {
+  background: white;
+  color: #5B636C;
+  font-size: 32rpx;
+  font-weight: 700;
+  height: 100%;
+  margin-bottom: 90rpx;
+}
+/* 版心 */
+.w {
+  width: 680rpx;
+  margin: 0 auto;
+}
+.select_box {
+  background-color: #fafafa;
+  width: 680rpx;
+  margin: 35rpx auto;
+  position: relative;
+  border-radius: 15rpx;
+  border: 1rpx solid #ccc;
+}
+.select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border: 2rpx solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.select_text {
+  font-size: 30rpx;
+  flex: 1;
+  color: dimgray;
+}
+.message{
+  padding: 0 0 10rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.message .title1,.msg_title{
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #808080;
+  font-size: 28rpx;
+}
+
+
+.select_img {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition: transform 0.3s;
+}
+.select_img_rotate {
+  transform: rotate(180deg);
+}
+.option_box {
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background-color: rgb(231, 229, 229);
+  transition: height 0.3s;
+  z-index: 8;
+}
+.option {
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid gainsboro;
+  padding: 10rpx;
+}
+/* 中间内容部分 */
+.main {
+  height: 700rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-top: 70rpx;
+}
+.time picker {
+  background: red;
+  width: 640rpx;
+  height: 120rpx;
+}
+.time .time-a {
+  float: left;
+}
+.time .time-b {
+  float: left;
+  color: #808080;
+  padding-left: 30rpx;
+}
+.time image {
+  position: absolute;
+  right: 30rpx;
+  top: 50rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.address {
+  background-color: white;
+  height: 120rpx;
+  line-height: 120rpx;
+  border-bottom: 2rpx solid #efefef;
+  /* box-shadow: 0 2rpx 10rpx 0rpx #ddd; */
+}
+.cost,
+.time,.title {
+  position: relative;
+  background-color: white;
+  height: 120rpx;
+  line-height: 120rpx;
+  border-bottom: 2rpx solid #efefef;
+  /* box-shadow: 0 2rpx 10rpx 0rpx #ddd; */
+  padding-left: 20rpx;
+}
+.textarea {
+  height: 240rpx;
+  width: 660rpx;
+}
+.textarea textarea {
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+  height: 220rpx;
+  width: 660rpx;
+  border-bottom: 2rpx solid #efefef;
+}
+.cost view {
+  float: left;
+}
+.title input {
+  height: 120rpx;
+  line-height: 120rpx;
+}
+.cost input {
+  float: left;
+  margin-left: 30rpx;
+  height: 120rpx;
+  width: 440rpx;
+}
+
+/* 尾部 */
+.footer {
+  position: fixed;
+  width: 750rpx;
+  height: 110rpx;
+  bottom: 0;
+  background: white;
+  border-top: 2rpx solid #efefef;
+  z-index: 9;
+}
+.total {
+  color: red;
+  float: left;
+  height: 110rpx;
+  line-height: 110rpx;
+  margin-left: 30rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.footer button {
+  background-color: red;
+  color: white;
+  height: 110rpx;
+  line-height: 110rpx;
+  float: right;
+  width: 300rpx;
+}
+
+/* 弹出框 */
+.dialog_mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.dialog_container {
+  position: fixed;
+  border: 0;
+  left: 25rpx;
+  top: 50rpx;
+  /* bottom: 0; */
+  width: 700rpx;
+  background: white;       
+  transform: translateY(200%);
+  transition: all 0.4s ease;
+  z-index: 11;
+}
+.dialog_show .dialog_container {
+  transform: translateY(0);
+}
+.dialog_show .dialog_mask {
+  display: block;
+}
+
+
+/* 密码框 */
+.itemStyle{
+  width:80rpx;height:80rpx;background:#f2f2f2;border-radius:6rpx;border:1rpx solid #dadada;margin-left:10rpx;overflow: hidden;position: relative;
+}
+.flex_Center .nextStyle {
+  position:fixed;
+  bottom:0px;
+  width:700rpx;
+  left:0;
+  height:120rpx;
+  background-color:red;
+  color:#fff;
+  font-size:34rpx;
+  border-radius: 0;
+}
+.pwd-backgroundViewStyle {
+  /* position: relative; */
+  background:white;
+  margin-top:30rpx;
+}
+.headTextStyle{
+  font-size:30rpx;
+  color:#333;
+  font-weight:bold;
+  text-align: center;
+  margin-top: 10rpx;
+}
+.pwdInputStyle{
+  height:160rpx;display:flex;align-items:center;justify-content:center;
+}
+.pas_input {
+  border: 0;
+  color: #fff;
+  font-size: 24rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 8;
+  width: 1000rpx;
+  left: -400rpx;
+}
+.PwdStyle{
+  width:20rpx;height:20rpx;background:black;border-radius:10rpx;
+}
+.leftRightMarginStyle{
+  position: absolute;
+  top:50rpx;
+  left: 30rpx;
+  margin:0px 30rpx;
+}
+.pice {
+  text-align: center;
+  font-size: 80rpx;
+  font-weight: 700;
+}

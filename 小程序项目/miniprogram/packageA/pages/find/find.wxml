@@ -1,0 +1,66 @@
+<!--寻找需求页面  使用了分包 app.json添加了sub项-->
+
+<!-- 导航栏 -->
+ <tabs tabs="{{tabList}}" bindchangeItemColor="changeItemColor" bindtap = "getid">
+  <block wx:if="{{tabList[0]['isActive']}}">
+    <!-- 内容 -->
+      <view class="main">
+        <navigator url="../../../pages/goods/index?id={{item._id}}" class="main-item"
+         wx:for="{{needData}}"
+         wx:key="index"
+         >
+          <image src="../../../images/bg.jpg"></image>
+          <view class="main-text">
+            <text id="main-title">{{item.sort}}</text>
+            <text>{{item.title}}</text>
+            <view class="name_warp">
+              <text class="name">{{item.name}}</text>
+              <text class="name">好评度：100%</text>
+              <text class="how">￥{{item.pice}}</text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+  </block>
+  <block wx:if="{{tabList[1]['isActive']}}">
+      <view class="main">
+        <navigator url="../../../pages/goods/index?id={{item._id}}" class="main-item"
+         wx:for="{{needData}}"
+         wx:key="index"
+         >
+          <image src="../../../images/bg.jpg"></image>
+          <view class="main-text">
+            <text id="main-title">{{item.sort}}</text>
+            <text>{{item.title}}</text>
+            <view class="name_warp">
+              <text class="name">{{item.name}}</text>
+              <text class="name">好评度：100%</text>
+              <text class="how">￥{{item.pice}}</text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+  </block>
+  <block wx:if="{{tabList[2]['isActive']}}">
+      <view class="main">
+        <navigator url="../../../pages/goods/index?id={{item._id}}" class="main-item"
+         wx:for="{{needData}}"
+         wx:key="index"
+         >
+          <image src="../../../images/bg.jpg"></image>
+          <view class="main-text">
+            <text id="main-title">{{item.sort}}</text>
+            <text>{{item.title}}</text>
+            <view class="name_warp">
+              <text class="name">{{item.name}}</text>
+              <text class="name">好评度：100%</text>
+              <text class="how">￥{{item.pice}}</text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+  </block>
+ </tabs>
+ 
+  
+

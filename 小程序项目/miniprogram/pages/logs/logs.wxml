@@ -1,0 +1,17 @@
+<!--logs.wxml-->
+<!-- <view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view> -->
+
+
+<view class="body">
+    <view class="left">
+  
+    </view>
+     <view class="right">
+        <text>1243</text>
+    <view>发布你需要其他用户为你代拿/买的需求，例如拿快递或者购买物品。</view>
+    </view>
+</view>

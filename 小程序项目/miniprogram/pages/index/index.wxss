@@ -1,0 +1,64 @@
+/**index.wxss**/
+image {
+  width: 755rpx;
+  height: 400rpx;
+}
+/* 内容区 */
+.content {
+  position: relative;
+}
+.content .ul {
+  position: absolute;
+  top: -74rpx;
+  right: 50rpx;
+  width: 656rpx;
+  height: 198rpx;
+  
+}
+.content  navigator {
+  width: 656rpx;
+  height: 198rpx;
+  border-radius: 24rpx;
+  background-color: #fff;
+  box-shadow:0 2rpx 10rpx 0rpx #ddd;
+  margin-bottom: 40rpx;
+
+  
+  /* overflow: hidden; */
+}
+/* .ul navigator:hover {
+  margin-left: 40rpx;
+  color: red;
+} */
+/* .navigator-hover {
+  
+} */
+navigator .con-left {
+  float: left;
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  margin-top: 46rpx;
+  margin-left: 40rpx;
+  margin-right: 20rpx;
+}
+.con-left image {
+  width: 110rpx;
+  height: 110rpx;
+}
+.con-right {
+  float: left;
+  height: 198rpx;
+  width: 434rpx;
+  /* background: bisque; */
+  margin-top: 34rpx;
+}
+.con-right .hd {
+  font-size: 38rpx;
+  font-weight: 600;
+}
+.con-right .bd {
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+

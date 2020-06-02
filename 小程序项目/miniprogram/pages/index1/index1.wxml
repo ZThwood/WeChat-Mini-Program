@@ -1,0 +1,93 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <!-- 类型选择框部分 -->
+  <view class='select_box'>
+    <picker class="select" name='sort' bindchange="bindPickerChange" value="{{selectData[index]}}" range="{{selectData}}">
+      <view class="picker">当前选择：{{selectData[index]}}</view>
+    </picker>
+  </view>
+  <!-- 中间部分start -->
+  <view class="main w">
+    <!-- 添加地址 -->
+    <view class="address" wx:if="{{!addressData}}">
+      <button type="warn" bindtap="getAddress" plain="{{true}}">添加送达地址</button>
+    </view>
+    <!-- 获取收货信息 -->
+    <view class="message" wx:else>
+      <text class="updata" bindtap="getAddress">修改收货地址</text>
+
+      <view class="title1">
+        <text class="a">{{addressData.userName}}</text>
+        <text class="b">{{addressData.telNumber}}</text>
+      </view>
+      <view class="msg_title">{{longAddre}}</view>
+    </view>
+
+    <view class="title">
+      <input name="title" placeholder="请输入标题" maxlength="50" bindinput="changeTitle"></input>
+    </view>
+    <view class="textarea">
+      <!-- 这里的textarea层级过高穿透问题，用隐藏解决 -->
+      <textarea name="contens" placeholder="请简述" maxlength="200" hidden="{{showDialog}}" bindinput="changeText"></textarea>
+    </view>
+    <picker mode="time" name='time' bindchange="changeTime">
+      <view class="time">
+        <view class="time-a">送达时间</view>
+        <view class="time-b">{{time}}</view>
+        <image class="" src="../../icon/icon-left.png"></image>
+      </view>
+    </picker>
+
+    <!-- <view class="title">
+      <!-- <view class="other2"></view> -->
+
+    <!-- </view> -->
+    <!-- 费用部分 -->
+    <view class="cost">
+      <view class="other2">需求费用</view>
+      <input placeholder="0" bindinput="changeMen" type="number"></input>
+    </view>
+  </view>
+  <!-- 中间main  end -->
+  <!-- 尾部部分start -->
+  <view class="footer">
+    <view class="total">￥{{pice}}元</view>
+    <view bindtap="getData">
+      <button bindtap="onClickButton">立即发布</button>
+      <view class="dialog {{ showDialog ? 'dialog_show' : '' }}">
+        <view class="dialog_mask" bindtap="onClickdiaView" />
+        <view class="dialog_container">
+
+          <!--  //此区域自定义视图  -->
+          <view class="flex_Center" style="height:600rpx;background:write;">
+            <view style="color:#333;font-size:30rpx;">
+              <!-- 密码框 -->
+              <view class="pwd-backgroundViewStyle">
+                <view class="leftRightMarginStyle">
+                  <view class="pice">￥{{pice}}</view>
+                  <view class="headTextStyle">请输入支付密码</view>
+                  <view class="pwdInputStyle">
+                    <input class="pas_input" type="number" maxlength="6" focus="{{inputShowed}}" bindinput="onChangeInput" />
+                    <block wx:for="{{[0,1,2,3,4,5]}}">
+                      <view class="itemStyle flex_Center">
+                        <view wx:if="{{passWordArr[item] == true}}" class="PwdStyle"></view>
+                      </view>
+                    </block>
+                  </view>
+                </view>
+              </view>
+
+              <button form-type="submit" class="nextStyle" bindtap="onTapCommit">支付</button>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+</form>
+
+
+
+<!-- <view class="flex_Center backgroundViewStyle" style="">
+底部弹出</view> -->
